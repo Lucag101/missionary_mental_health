@@ -1,13 +1,14 @@
 .mood-modal {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(86 90 96 / 84%);
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    align-items: center;
 }
 
 .mood-selector {
@@ -29,12 +30,14 @@
 .mood-option {
 	cursor: pointer;
 	font-size: 2rem;
+	/* animation: pulse 3s infinite ease-in-out; */
 }
 
 .mood-option.selected {
 	transform: scale(1.5);
 	transition-delay: 250ms;
 	transition: ease-in 40ms;
+	/* animation: pulse 3s infinite ease-in-out; */
 }
 
 .modal-close-icon {

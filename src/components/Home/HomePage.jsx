@@ -1,6 +1,7 @@
 import "./Home.css";
 import React, { useState } from "react";
 import MoodSelector from "../Modals/MoodSelector";
+import Navbar from "../Navbar/Navbar";
 
 function HomePage() {
   const [userMood, setUserMood] = useState("");
@@ -28,6 +29,7 @@ function HomePage() {
         <h2>Time to focus on your mental health</h2>
         {displayMoodModal && <MoodSelector onSelect={handleMoodSelection} onSubmit={handleMoodSubmit} onClose={handleCloseModal} />}
       </div>
+      <Navbar />
     </div>
   );
 }
