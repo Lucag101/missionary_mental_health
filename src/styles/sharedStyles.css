@@ -9,3 +9,43 @@
         transform: scale(1);
     }
 }
+
+
+
+.navbar-main{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-element {
+    padding: 10px;
+    background-color: #ebf3ffb3;
+    border-radius: 10px;
+    margin: 10px;
+    color: black;
+    animation: pulse 3s infinite ease-in-out;
+}
+
+.navbar-element:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.navbar-element:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.navbar-element:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+.navbar-element:hover {
+    background-color: #ffffffd9;
+    cursor: pointer;
+    transform: scale(1.1);
+}

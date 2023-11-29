@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "../Navbar/Navbar";
 import MoodSelector from "./MoodSelector";
 
 function HomePage() {
@@ -28,7 +27,6 @@ function HomePage() {
         <h2 className="text-xl">Time to focus on your mental health</h2>
         {displayMoodModal && <MoodSelector onSelect={handleMoodSelection} onSubmit={handleMoodSubmit} onClose={handleCloseModal} />}
       </div>
-      <Navbar />
     </div>
   );
 }
