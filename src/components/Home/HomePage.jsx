@@ -1,3 +1,4 @@
+import "./Home.css";
 import React, { useState } from "react";
 import MoodSelector from "../Modals/MoodSelector";
 
@@ -11,10 +12,13 @@ function HomePage() {
   };
 
   const handleCloseModal = () => {
-    // Implement the logic to close the modal
-    // For example, set a state in the parent component to control the modal visibility
     setDisplayMoodModal(false);
-    console.log("Closing modal");
+  };
+
+  const handleMoodSubmit = () => {
+    if (userMood !== "") {
+      setDisplayMoodModal(false);
+    }
   };
 
   return (
@@ -22,7 +26,7 @@ function HomePage() {
       <div className="home-page">
         <h1>Welcome!</h1>
         <h2>Time to focus on your mental health</h2>
-        {displayMoodModal && <MoodSelector onSelect={handleMoodSelection} onClose={handleCloseModal} />}
+        {displayMoodModal && <MoodSelector onSelect={handleMoodSelection} onSubmit={handleMoodSubmit} onClose={handleCloseModal} />}
       </div>
     </div>
   );

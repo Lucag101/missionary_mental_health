@@ -1,5 +1,4 @@
-// MoodSelector.js
-
+import "./Modals.css";
 import React, { useState } from "react";
 import { ReactComponent as CloseIcon } from "../../icons/close_icon.svg";
 // import { ReactComponent as ReactLogo } from "./logo.svg";
@@ -7,13 +6,12 @@ import { ReactComponent as CloseIcon } from "../../icons/close_icon.svg";
 
 const moodOptions = ["😁", "🙂", "😐", "😕", "😢"];
 
-function MoodSelector({ onSelect, onClose }) {
+function MoodSelector({ onSelect, onSubmit, onClose }) {
   const [selectedMood, setSelectedMood] = useState("");
 
   const handleMoodClick = (mood) => {
     setSelectedMood(mood);
     onSelect(mood); // Pass the selected mood to the parent component
-    // onClose(); // Close the modal after selecting a mood
   };
 
   return (
@@ -29,6 +27,9 @@ function MoodSelector({ onSelect, onClose }) {
             </span>
           ))}
         </div>
+        <button className="modal-confirm-button" onClick={onSubmit}>
+          Confirm
+        </button>
       </div>
     </div>
   );
