@@ -3,9 +3,9 @@ import '../../styles/sharedStyles.css'
 
 function Analytics() {
   return (
-    <div>
+    <div className="h-screen flex justify-center items-center flex-col">
         <h1>Analytics Page</h1>
-        
+        <div>Putting some stuff in here to test length</div>
     </div>
   );
 }
