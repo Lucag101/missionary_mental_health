@@ -65,7 +65,7 @@
 
 .page-enter-active {
 transform: translateY(0);
-transition: transform 300ms ease-in-out;
+transition: transform 2s ease-in-out;
 }
 
 .page-exit {
@@ -74,7 +74,7 @@ transform: translateY(0);
 
 .page-exit-active {
 transform: translateY(-1000px);
-transition: transform 300ms ease-in-out;
+transition: transform 2s ease-in-out;
 }
   
 /* main page animation */
@@ -99,17 +99,17 @@ transition: transform 300ms ease-in-out;
 }
 
 .animate-pop-up {
-    animation: popUp 1s ease-out 1s forwards;
+    animation: popUp 1s ease-out 2.5s forwards;
     opacity: 0; 
 }
 
 .animate-pop-up-2 {
-    animation: popUp 1s ease-out 3s forwards;
+    animation: popUp 1s ease-out 4.5s forwards;
     opacity: 0; 
 }
 
 .animate-pop-up-3 {
-    animation: popUp 1s ease-out 5s forwards;
+    animation: popUp 1s ease-out 6.5s forwards;
     opacity: 0; 
 }
 
@@ -212,7 +212,54 @@ line-height: 1.2;
   .feature a i {
     margin-left: 5px;
   }
-  
+
+
+/* ____TIMER Styles _____*/
+
+#countdown {
+  position: relative;
+  margin-top: 20px;
+  height: 200px; /* Adjusted size */
+  width: 200px; /* Adjusted size */
+  text-align: center;
+}
+
+#countdown-number {
+  color: white;
+  /* display: inline-block; */
+  line-height: 200px; /* Adjusted to match height */
+  font-size: 50px; /* Larger font size for better visibility */
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px; /* Adjusted size */
+  height: 200px; /* Adjusted size */
+  transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+svg circle {
+  stroke-dasharray: 628px; /* Adjusted to new circumference (C = 2 * π * r, r = 50) */
+  stroke-dashoffset: 0px;
+  stroke-linecap: round;
+  stroke-width: 8px; /* Thicker stroke */
+  stroke: white;
+  fill: none;
+  animation: countdown 60s linear infinite forwards;
+}
+
+@keyframes countdown {
+  from {
+    stroke-dashoffset: 0px;
+  }
+  to {
+    stroke-dashoffset: 628px; /* Adjusted to new circumference */
+  }
+}
+
+
 
 
 /*!

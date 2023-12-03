@@ -1,9 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import { TransitionGroup, CSSTransition } from 'react-transition-group';
-// import HomePage from "../Home/HomePage";
-// import Resources from "../Home/Resources";
-// import Exercises from "../Home/Exercises";
-// import Analytics from "../Home/Analytics";
+
 import { useState } from "react";
 import MoodSelector from "../Home/MoodSelector";
 import Navbar from "./Navbar";

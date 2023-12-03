@@ -15,7 +15,7 @@ function RouteAnimator() {
         <TransitionGroup>
             <CSSTransition
                 key={location.key}
-                timeout={300}
+                timeout={2000}
                 classNames="page"
                 >
                 <Routes location={location}>
