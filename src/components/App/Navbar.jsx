@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 flex items-center justify-center min-h-100">
-      <div className="navbar-element animate-pulse">
+    <div className="navbar-main">
+      <div className="px-3 py-2 m-3 rounded-lg bg-white/60 animate-pulse [animation-delay:_0ms] hover:bg-white/80 cursor-pointer backdrop-blur-lg">
         <Link to="/">Home</Link>
       </div>
-      <div className="navbar-element animate-pulse" data-delay="400">
+      <div className="px-3 py-2 m-3 rounded-lg bg-white/60 animate-pulse [animation-delay:_400ms] hover:bg-white/80 cursor-pointer backdrop-blur-lg">
         <Link to="/resources">Resources</Link>
       </div>
-      <div className="navbar-element animate-pulse" data-delay="800">
+      <div className="px-3 py-2 m-3 rounded-lg bg-white/60 animate-pulse [animation-delay:_800ms] hover:bg-white/80 cursor-pointer backdrop-blur-lg">
         <Link to="/exercises">Exercises</Link>
       </div>
-      <div className="navbar-element animate-pulse" data-delay="1200">
+      <div className="px-3 py-2 m-3 rounded-lg bg-white/60 animate-pulse [animation-delay:_1200ms] hover:bg-white/80 cursor-pointer backdrop-blur-lg">
         <Link to="/analytics">Analytics</Link>
       </div>
     </div>

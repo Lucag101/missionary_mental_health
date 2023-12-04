@@ -32,7 +32,7 @@ function MoodSelector({ onSelect, onSubmit, onClose }) {
             </span>
           ))}
         </div>
-        <button className="px-6 py-3 mt-4 text-sm font-bold text-white rounded cursor-pointer bg-cyan-400 hover:bg-cyan-500" onClick={onSubmit}>
+        <button className="px-6 py-3 mt-4 text-sm font-bold text-white scale-105 rounded-lg cursor-pointer bg-cyan-400 hover:bg-cyan-500 active:animate-pulse" onClick={onSubmit}>
           Confirm
         </button>
       </div>
