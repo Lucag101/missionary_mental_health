@@ -4,7 +4,7 @@ import HomePage from "../Home/HomePage";
 function App() {
   return (
     <Router basename="/">
-      <div className="bg-gradient-to-b from-cyan-100 to-cyan-300">
+      <div className="bg-gradient-to-b from-cyan-100 to-cyan-300 w-full">
         <div className="flex justify-center items-center h-screen text-blue-900">
           <Routes>
             <Route path="/" element={<HomePage />} />
