@@ -12,9 +12,9 @@ function MoodSelector({ onSelect, onSubmit, onClose }) {
   };
 
   return (
-    <div className="z-10 fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="relative bg-white pt-10 pb-5 px-5 sm:px-8 md:px-12 lg:px-16 xl:px-20 rounded-2xl w-11/12 text-center">
-        <CloseIcon className="absolute top-4 right-4 h-6 cursor-pointer stroke-2 hover:opacity-80" onClick={onClose} />
+    <div className="fixed top-0 left-0 z-10 flex items-center justify-center w-full h-full bg-black bg-opacity-50">
+      <div className="relative w-11/12 px-5 pt-10 pb-5 text-center bg-white sm:px-8 md:px-12 lg:px-16 xl:px-20 rounded-2xl">
+        <CloseIcon className="absolute w-6 h-6 cursor-pointer stroke-2 top-4 right-4 hover:opacity-80" onClick={onClose} />
         <p className="text-lg font-bold">How are you doing today?</p>
         <p className="mb-4">Select your mood:</p>
         <div className="flex justify-around">
@@ -32,7 +32,7 @@ function MoodSelector({ onSelect, onSubmit, onClose }) {
             </span>
           ))}
         </div>
-        <button className="bg-cyan-400 text-white text-sm font-bold mt-4 px-6 py-3 rounded cursor-pointer hover:bg-cyan-500" onClick={onSubmit}>
+        <button className="px-6 py-3 mt-4 text-sm font-bold text-white rounded cursor-pointer bg-cyan-400 hover:bg-cyan-500" onClick={onSubmit}>
           Confirm
         </button>
       </div>
