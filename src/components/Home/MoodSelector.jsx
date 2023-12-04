@@ -12,7 +12,7 @@ function MoodSelector({ onSelect, onSubmit, onClose }) {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
+    <div className="z-10 fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
       <div className="relative bg-white pt-10 pb-5 px-5 sm:px-8 md:px-12 lg:px-16 xl:px-20 rounded-2xl w-11/12 text-center">
         <CloseIcon className="absolute top-4 right-4 h-6 cursor-pointer stroke-2 hover:opacity-80" onClick={onClose} />
         <p className="text-lg font-bold">How are you doing today?</p>

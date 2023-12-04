@@ -1,14 +1,41 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "../Home/HomePage";
+
+import { useState } from "react";
+import MoodSelector from "../Home/MoodSelector";
+import Navbar from "./Navbar";
+import RouteAnimator from "./RouteAnimator";
+
+
 
 function App() {
+  
+  const [userMood, setUserMood] = useState("");
+  const [displayMoodModal, setDisplayMoodModal] = useState(true);
+
+  const handleMoodSelection = (mood) => {
+    setUserMood(mood);
+    // You can perform additional actions based on the selected mood
+  };
+
+  const handleCloseModal = () => {
+    setDisplayMoodModal(false);
+  };
+
+  const handleMoodSubmit = () => {
+    if (userMood !== "") {
+      setDisplayMoodModal(false);
+    }
+  };
+
   return (
     <Router basename="/">
       <div className="bg-gradient-to-b from-cyan-100 to-cyan-300 w-full">
         <div className="flex justify-center items-center h-screen text-blue-900">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-          </Routes>
+          <div className="relative flex justify-center items-center h-screen">
+            <RouteAnimator />
+          </div>
+          <Navbar />
+          {displayMoodModal && <MoodSelector onSelect={handleMoodSelection} onSubmit={handleMoodSubmit} onClose={handleCloseModal} />}
         </div>
       </div>
     </Router>

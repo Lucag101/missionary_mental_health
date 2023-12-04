@@ -1,24 +1,9 @@
 import React, { useState } from "react";
 import MoodSelector from "./MoodSelector";
+import '../../styles/sharedStyles.css'
 
 function HomePage() {
-  const [userMood, setUserMood] = useState("");
-  const [displayMoodModal, setDisplayMoodModal] = useState(true);
 
-  const handleMoodSelection = (mood) => {
-    setUserMood(mood);
-    // You can perform additional actions based on the selected mood
-  };
-
-  const handleCloseModal = () => {
-    setDisplayMoodModal(false);
-  };
-
-  const handleMoodSubmit = () => {
-    if (userMood !== "") {
-      setDisplayMoodModal(false);
-    }
-  };
 
   return (
     <div className="flex flex-col min-h-screen">
