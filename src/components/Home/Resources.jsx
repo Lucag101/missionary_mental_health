@@ -15,28 +15,28 @@ function Resources() {
             <div class="row gx-5">
               <div class="col-lg-4 mb-5 mb-lg-0 featureColumn">
                 <div class="feature"><i class="bi bi-collection"></i></div>
-                <h2 class="h4 fw-bolder">Shared Experience</h2>
-                <p>Read about how missionaries in the LDS chuch have overcome their personal struggles with mental health on their missions.</p>
-                <a class="text-decoration-none ella-a" target="blank" href="https://www.churchofjesuschrist.org/study/ensign/2020/09/young-adults/for-missionaries-struggling-with-mental-health?lang=eng">
-                  More on LDS Missionary Mental Health
+                <h2 class="h4 fw-bolder">Physical Care</h2>
+                <p>While being on your mission has a spiritual emphasis and focus, it's also important to take care of yourself physically. Read how you can maintain a healthy physical balance in your life while caring for your spirituality as well.</p>
+                <a class="text-decoration-none ella-a" target="blank" href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health">
+                  More on Physical Health
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
               <div class="col-lg-4 mb-5 mb-lg-0 featureColumn">
                 <div class="feature"><i class="bi bi-collection"></i></div>
-                <h2 class="h4 fw-bolder">Elder Holland on Mental Health</h2>
-                <p>Elder Holland explains that as you help with sensitive or trying situations, remember the following guiding principles: love first, listen to understand, teach truth, nourish faith, and minister.</p>
-                <a class="text-decoration-none ella-a" target="blank" href="https://www.churchofjesuschrist.org/study/manual/counseling-resources/mental-health?lang=eng">
-                  More on Mental Health with Elder Holland
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-              <div class="col-lg-4 mb-5 mb-lg-0 featureColumn">
-                <div class="feature"><i class="bi bi-collection"></i></div>
-                <h2 class="h4 fw-bolder">Counseling Resources</h2>
+                <h2 class="h4 fw-bolder">Online Resources</h2>
                 <p>Read about how the LDS Church offers resources for varieties of common problems and issues for both missionaries and other members of the Church.</p>
                 <a class="text-decoration-none ella-a" href="https://www.churchofjesuschrist.org/study/manual/counseling-resources?lang=eng">
                   More on LDS Counseling Resources
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+              <div class="col-lg-4 mb-5 mb-lg-0 featureColumn">
+                <div class="feature"><i class="bi bi-collection"></i></div>
+                <h2 class="h4 fw-bolder">Common Ground</h2>
+                <p>Read about how missionaries in the LDS chuch have overcome their personal struggles with mental health on their missions.</p>
+                <a class="text-decoration-none ella-a" target="blank" href="https://www.churchofjesuschrist.org/study/ensign/2020/09/young-adults/for-missionaries-struggling-with-mental-health?lang=eng">
+                  More on LDS Missionary Mental Health
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
