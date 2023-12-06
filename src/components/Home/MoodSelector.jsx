@@ -13,7 +13,7 @@ function MoodSelector({ onSelect, onSubmit, onClose }) {
 
   return (
     <div className="fixed top-0 left-0 z-10 flex items-center justify-center w-full h-full bg-black bg-opacity-50">
-      <div className="relative w-11/12 px-5 pt-10 pb-5 text-center bg-white sm:px-8 md:px-12 lg:px-16 xl:px-20 rounded-2xl">
+      <div className="relative flex flex-col w-11/12 px-5 pt-10 pb-5 text-center bg-white sm:px-8 md:px-12 lg:px-16 xl:px-20 rounded-2xl">
         <CloseIcon className="absolute w-6 h-6 cursor-pointer stroke-2 top-4 right-4 hover:opacity-80" onClick={onClose} />
         <p className="text-lg font-bold">How are you doing today?</p>
         <p className="mb-4">Select your mood:</p>
@@ -32,7 +32,10 @@ function MoodSelector({ onSelect, onSubmit, onClose }) {
             </span>
           ))}
         </div>
-        <button className="px-6 py-3 mt-4 text-sm font-bold text-white scale-105 rounded-lg cursor-pointer bg-cyan-400 hover:bg-cyan-500 active:animate-pulse" onClick={onSubmit}>
+
+        <textarea className="p-2 mx-5 my-4 border rounded resize-none focus:outline-none" placeholder="Why you feel that way..." maxLength={100} />
+
+        <button className="px-6 py-3 text-sm font-bold text-white scale-105 rounded-lg cursor-pointer bg-cyan-400 hover:bg-cyan-500 active:animate-pulse" onClick={onSubmit}>
           Confirm
         </button>
       </div>
