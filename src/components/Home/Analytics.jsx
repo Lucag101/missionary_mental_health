@@ -25,17 +25,19 @@ function formatReadableDate(dateString) {
 
 function Analytics() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen overflow-y-auto">
+    <div className="flex flex-col items-center justify-center w-screen h-screen pb-[80px] pt-[20px]">
       <h1 className="mt-5">Analytics Page</h1>
-      <div className="max-h-screen my-2">
+      
+      <div className="max-h-screen my-2 overflow-y-auto max-h-[90vh] pb-[10px]">
         {previous_entries.map((entry, index) => (
-          <div key={index} className="w-full p-5 mx-3 my-2 border rounded-lg border-blue-500/20 bg-blue-100/40 ">
+          <div key={index} className="p-5 mx-3 my-2 border rounded-lg border-blue-500/20 bg-blue-100/40 ">
             <div className="py-2 text-4xl">{entry.mood}</div>
             <p className="font-medium">{formatReadableDate(entry.date)}</p>
             <p className="font-extralight">{entry.description}</p>
           </div>
         ))}
       </div>
+
     </div>
   );
 }

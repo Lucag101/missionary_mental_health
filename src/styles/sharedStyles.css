@@ -188,13 +188,13 @@ a:not([href]):not([class]):hover {
 }
 
 .featureSection {
-  padding: 80px 0;
+  /* padding: 80px 0; */
   /* Adjust as needed */
 }
 
 .featureColumn {
   margin-bottom: 10px;
-  height: 280px;
+  min-height: 280px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -272,7 +272,7 @@ svg {
 }
 
 svg circle {
-  stroke-dasharray: 628px;
+  stroke-dasharray: 560px;
   /* Adjusted to new circumference (C = 2 * π * r, r = 50) */
   stroke-dashoffset: 0px;
   stroke-linecap: round;
@@ -283,13 +283,17 @@ svg circle {
   animation: countdown 60s linear infinite forwards;
 }
 
+.paused {
+  animation-play-state: paused;
+}
+
 @keyframes countdown {
   from {
     stroke-dashoffset: 0px;
   }
 
   to {
-    stroke-dashoffset: 628px;
+    stroke-dashoffset: 530px;
     /* Adjusted to new circumference */
   }
 }
@@ -400,7 +404,7 @@ svg circle {
 
 .row-cols-3>* {
   flex: 0 0 auto;
-  width: 33.3333333333%;
+  width: 33%;
 }
 
 .row-cols-4>* {
@@ -440,7 +444,7 @@ svg circle {
 
 .col-4 {
   flex: 0 0 auto;
-  width: 33.33333333%;
+  width: 33%;
 }
 
 .col-5 {
@@ -505,7 +509,7 @@ svg circle {
 
   .row-cols-sm-3>* {
     flex: 0 0 auto;
-    width: 33.3333333333%;
+    width: 33%;
   }
 
   .row-cols-sm-4>* {
@@ -545,7 +549,7 @@ svg circle {
 
   .col-sm-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 33%;
   }
 
   .col-sm-5 {
@@ -611,7 +615,7 @@ svg circle {
 
   .row-cols-lg-3>* {
     flex: 0 0 auto;
-    width: 33.3333333333%;
+    width: 33%;
   }
 
   .row-cols-lg-4>* {
@@ -651,7 +655,9 @@ svg circle {
 
   .col-lg-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
   }
 
   .col-lg-5 {
@@ -717,7 +723,7 @@ svg circle {
 
   .row-cols-xl-3>* {
     flex: 0 0 auto;
-    width: 33.3333333333%;
+    width: 33%;
   }
 
   .row-cols-xl-4>* {
@@ -757,7 +763,7 @@ svg circle {
 
   .col-xl-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 33%;
   }
 
   .col-xl-5 {

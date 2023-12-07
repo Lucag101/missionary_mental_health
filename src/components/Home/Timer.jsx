@@ -18,11 +18,18 @@ const Timer = () => {
     return () => clearInterval(interval);
   }, [isActive, countdown]);
 
+
   return (
     <div id="countdown">
       <div id="countdown-number">{countdown}</div>
       <svg>
-      <circle r="90" cx="100" cy="100"></circle>
+      <circle 
+        r="90" 
+        cx="100" 
+        cy="100"
+        className={!isActive ? "paused" : ""}
+        // style={{ animationDuration: `${countdown}s` }}
+      ></circle>
       </svg>
       <button onClick={() => setIsActive(!isActive)}>
         {isActive ? 'Pause' : 'Start'}

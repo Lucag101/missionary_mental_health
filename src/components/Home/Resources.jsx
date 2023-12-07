@@ -3,11 +3,7 @@ import "../../styles/sharedStyles.css";
 
 function Resources() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen overflow-y-auto">
-      <h1 className="mb-4 text-3xl font-bold">Resources Page</h1>
-      <div className="prettyDiv">
-        <p>If you or someone you know is in crisis, contact the Suicide Prevention Lifeline at 1-800-273-TALK (8255), or dial 911 in case of emergency.</p>
-      </div>
+    <div className="flex flex-col items-center justify-center w-screen h-screen overflow-y-auto pb-[90px]">
       <section class="featureSection">
         <div class="container px-5 my-5">
           <div class="row gx-5">
@@ -55,6 +51,9 @@ function Resources() {
           </div>
         </div>
       </section>
+      <div className="prettyDiv">
+        <p>If you or someone you know is in crisis, contact the Suicide Prevention Lifeline at 1-800-273-TALK (8255), or dial 911 in case of emergency.</p>
+      </div>
     </div>
   );
 }
