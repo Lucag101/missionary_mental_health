@@ -1,5 +1,52 @@
 [
 	{
-		"date": ""
+		"date": "2023-01-15T18:30:00",
+		"mood": "😐",
+		"description": "Had a hectic day at work with tight deadlines. Feeling stressed and overwhelmed."
+	},
+	{
+		"date": "2023-02-02T21:15:00",
+		"mood": "😢",
+		"description": "Received disappointing news about a personal matter. Feeling sad and lonely."
+	},
+	{
+		"date": "2023-03-08T12:45:00",
+		"mood": "😁",
+		"description": "Spent a wonderful day with friends. Feeling happy and grateful for their company."
+	},
+	{
+		"date": "2023-04-05T08:00:00",
+		"mood": "🙂",
+		"description": "Managed to complete a challenging task at work. Feeling satisfied and accomplished."
+	},
+	{
+		"date": "2023-05-12T19:00:00",
+		"mood": "😕",
+		"description": "Facing uncertainty about the future plans. Feeling a bit anxious and confused."
+	},
+	{
+		"date": "2023-06-20T16:30:00",
+		"mood": "😁",
+		"description": "Attended a positive and uplifting workshop. Feeling inspired and motivated."
+	},
+	{
+		"date": "2023-07-10T14:00:00",
+		"mood": "😐",
+		"description": "Dealing with work conflicts. Feeling neutral but a bit drained."
+	},
+	{
+		"date": "2023-08-18T22:45:00",
+		"mood": "😢",
+		"description": "Missed an important family event. Feeling guilty and disappointed in myself."
+	},
+	{
+		"date": "2023-09-25T09:30:00",
+		"mood": "🙂",
+		"description": "Received positive feedback on a personal project. Feeling proud and content."
+	},
+	{
+		"date": "2023-10-30T17:20:00",
+		"mood": "😐",
+		"description": "Experiencing a period of uncertainty in personal relationships. Feeling a bit unsettled."
 	}
 ]
