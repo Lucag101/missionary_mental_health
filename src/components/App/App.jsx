@@ -29,7 +29,7 @@ function App() {
       <div className="w-full bg-gradient-to-b from-cyan-100 to-cyan-300">
         <div className="flex items-center justify-center h-screen text-blue-900">
           <div className="relative flex items-center justify-center h-screen">
-            <RouteAnimator />
+            <RouteAnimator displayMoodModal={displayMoodModal} />
           </div>
           <Navbar />
           {displayMoodModal && <MoodSelector onSelect={handleMoodSelection} onSubmit={handleMoodSubmit} onClose={handleCloseModal} />}
