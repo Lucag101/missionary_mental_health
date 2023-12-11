@@ -103,17 +103,17 @@
 }
 
 .animate-pop-up {
-  animation: popUp 1s ease-out 2s forwards;
+  animation: popUp 1s ease-out 1.5s forwards;
   opacity: 0;
 }
 
 .animate-pop-up-2 {
-  animation: popUp 1s ease-out 4s forwards;
+  animation: popUp 1s ease-out 3.5s forwards;
   opacity: 0;
 }
 
 .animate-pop-up-3 {
-  animation: popUp 1s ease-out 6s forwards;
+  animation: popUp 1s ease-out 5.5s forwards;
   opacity: 0;
 }
 
