@@ -7,7 +7,7 @@ import Analytics from "../Home/Analytics";
 import '../../styles/sharedStyles.css'
 
 
-function RouteAnimator() {
+function RouteAnimator({displayMoodModal}) {
     const location = useLocation();
     
     return(        
@@ -19,7 +19,7 @@ function RouteAnimator() {
                 classNames="page"
                 >
                 <Routes location={location}>
-                    <Route path="/" element={<HomePage />} />
+                    <Route path="/" element={<HomePage displayMoodModal={displayMoodModal} />} />
                     <Route path="/resources" element={<Resources />} />
                     <Route path="/exercises" element={<Exercises />} />
                     <Route path="/analytics" element={<Analytics />} />
