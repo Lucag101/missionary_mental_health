@@ -1,0 +1,16 @@
+.mood-chart {
+	position: relative;
+	transform: none;
+	display: block;
+	height: 500px;
+	width: 100%;
+}
+
+.mood-chart svg {
+	position: initial;
+	top: initial;
+	right: initial;
+	width: initial;
+	height: initial;
+	transform: initial;
+}
